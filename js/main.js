@@ -11,6 +11,18 @@ function getMovies(searchText) {
     axios.get('http://www.omdbapi.com/?apikey=340ad3d5&s=' + searchText)
         .then((response) => {
             console.log(response);
+            let movies = response.data.Search;
+            let optput = '';
+            $.each(movies, (index, movie) => {
+                output += `
+                    <div class="col-md-3">
+                     <div class="well text-center">
+                      <img src="${movie.Poster}">
+                      <h5>${movie.Title}</h5>
+                    </div>
+                </div>
+                `;
+            })
         })
         .catch((err) => {
             console.log(err);
