@@ -27,7 +27,6 @@ function getMovies(searchText) {
             $('#movies').html(output);
         })
         .catch((err) => {
-            console.log(err);
         });
 
 
