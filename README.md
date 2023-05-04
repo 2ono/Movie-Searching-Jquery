@@ -1,4 +1,6 @@
 # Movie-Searching-Jquery
+
+
 #hosting site : https://incandescent-lebkuchen-ccd2ae.netlify.app/
 
 # https://www.omdbapi.com/에서 무료 API 발행해서 적용했습니다. 
